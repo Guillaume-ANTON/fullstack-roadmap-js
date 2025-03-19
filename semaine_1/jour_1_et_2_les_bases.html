@@ -15,12 +15,39 @@
             age: '25'
         } */
 
-        const profil = {
+        /* const profil = {
             clef: '01',
             nom: 'Guillaume ANTON',
             age: '25',
             [a]: 23
+        } */
+
+        /* const currentYear= 2025
+        const birthyear= prompt('Quel est votre année de naissanse ?')
+        const age= currentYear - birthyear
+
+        if(age <= 13) {
+            console.log('Oui oui')
+        } else if (age < 18) {
+            console.log('Matrix')
+        } else {
+            console.log('Evil Dead')
+        } */
+
+        const a= prompt("Entrez le premier nombre")
+        const b= prompt("Entrez le deuxième nombre")
+        const result= a*b
+        let signe
+
+        if(isNaN(result)) {
+            console.log(`Opération impossible : ${a}x${b}`)
+        } else if (result >= 0) {
+            signe = "positif"
+        } else {
+            signe = "négatif"
         }
+
+        console.log(`${a}x${b}= ${result} est ${signe}`)
 
     </script>
 </head>
